@@ -5,7 +5,7 @@ import plotly.graph_objs as go
 from plotly.subplots import make_subplots
 
 # Load the CSV file
-df = pd.read_csv('F:\\RAASMAN_DATA\\grouped_output.csv')
+df = pd.read_csv('grouped_output.csv')
 
 # Convert 'Time (hour)' to datetime
 df['Time (hour)'] = pd.to_datetime(df['Time (hour)'])
