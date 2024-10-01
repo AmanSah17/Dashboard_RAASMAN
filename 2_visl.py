@@ -13,6 +13,10 @@ df['Hour'] = df['Time (hour)'].dt.hour
 # Streamlit app layout
 st.title("Air Quality Dashboard")
 
+# Sidebar for navigation
+st.sidebar.header("Navigation")
+st.sidebar.markdown("[View Source Code](<URL_TO_YOUR_CODE>)")  # Replace <URL_TO_YOUR_CODE> with the actual link
+
 # Date Picker
 selected_date = st.date_input("Select Date", min_value=min(df['Date']), max_value=max(df['Date']))
 
